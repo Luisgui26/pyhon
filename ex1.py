@@ -16,7 +16,27 @@ def bhaskara():
     yv = -delta/(4 * a)
     frase += f' e o vértice está em xv = {xv} e yv = {yv}'
     return frase
-bhaskara()
+a = 1
+b = -5
+c = 6
+resultado = bhaskara(a, b, c)
+print(resultado)
+
+i = -10
+x  = []
+y = []
+while i < 10:
+    x.append(i)
+    f = a*i**2 + b*i + c
+    y.append(i)
+    i += 0.01
+    print(x)
+    print(y)
+
+import matplotlib as plt
+
+plt.plot(x, y)
+plt.show()
 
 
 
